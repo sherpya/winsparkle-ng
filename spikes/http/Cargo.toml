@@ -1,0 +1,16 @@
+[package]
+name = "http-spike"
+version = "1.0.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = []
+curl-backend = ["dep:curl"]
+
+[dependencies]
+curl = { version = "0.4", default-features = false, features = ["ssl", "static-curl"], optional = true }
+windows-sys = { version = "0.61", default-features = false, features = ["Win32_Foundation", "Win32_Networking_WinHttp"] }

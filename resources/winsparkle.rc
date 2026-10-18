@@ -1,0 +1,13 @@
+#pragma code_page(65001)
+#include <windows.h>
+#include <commctrl.h>
+#include "resource.h"
+#include "dialogs.rc"
+#include "strings.en.rc"
+#include "strings.generated.rc"
+#include "version.rc"
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+IDI_WINSPARKLE ICON "WinSparkle-NG.ico"
+// Linked test/example executables need an explicit UAC policy to avoid x86 installer detection.
+1 RT_MANIFEST "as-invoker.manifest"
+2 RT_MANIFEST "winsparkle.manifest"

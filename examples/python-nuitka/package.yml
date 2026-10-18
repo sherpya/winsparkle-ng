@@ -1,0 +1,7 @@
+- module-name: 'winsparkle'
+  dlls:
+    - from_filenames:
+        relative_path: '.'
+        prefixes:
+          - 'WinSparkle'
+      when: 'win32'

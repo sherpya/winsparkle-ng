@@ -1,0 +1,12 @@
+/target/
+/dist/
+/artifacts/
+/bc/
+/bw/
+__pycache__/
+*.pyc
+/.codegraph/
+/.codex/
+*.swp
+*.swo
+*~
